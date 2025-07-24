@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+  <header class="container-fluid p-0 position-sticky sticky-top bg-white ">
+    <div class="row justify-content-left align-items-center mb-3 mt-2">
+      <div class="col-3 ">
+        <h3 class="mt-3 mx-5 px-5 mb-1 fw-bold h1 ">M<span class="overline-e">e</span>rto</h3>
+      </div>
+      <div class="col-2 d-flex align-items-center mx-1 ">
+        <i class="fa-solid fa-phone fa-lg text-black ms-2 me-3 fs-2"></i>
+        <div class="">
+          <p class="mb-1 text-muted small  mt-4">Contact us 24/7</p>
+          <p class=" text-black fw-bold">(+92) 3942 7879</p>
+        </div>
+      </div>
+
+
+      <div class="col-3 px-1  ">
+        <div class="input-group px-4  mt-3 me-1 ">
+          <!-- زر All Categories -->
+          <button class="btn bg-body-secondary dropdown-toggle border-0  text-black p-3" type="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            All Categories
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">All Categories</a></li>
+            <li><a class="dropdown-item" href="#">Autopart</a></li>
+            <li><a class="dropdown-item" href="#">Car Care</a></li>
+            <li><a class="dropdown-item" href="#">Car Electronics</a></li>
+            <li><a class="dropdown-item" href="#">Equipment</a></li>
+            <li><a class="dropdown-item" href="#">Lights</a></li>
+            <li><a class="dropdown-item" href="#">Oils & Fluids</a></li>
+            <li><a class="dropdown-item" href="#">Tires</a></li>
+            <li><a class="dropdown-item" href="#">Wheels</a></li>
+            <li><a class="dropdown-item" href="#">Beauty & Health</a></li>
+            <li><a class="dropdown-item" href="#">Bogs & Cases</a></li>
+            <li><a class="dropdown-item" href="#">BB Creams</a></li>
+            <li><a class="dropdown-item" href="#">Body & Bath</a></li>
+            <li><a class="dropdown-item" href="#">Brushes & Tools</a></li>
+            <li><a class="dropdown-item" href="#">Hair Care</a></li>
+            <li><a class="dropdown-item" href="#">Lipstick</a></li>
+
+          </ul>
+
+          <!-- مربع البحث -->
+          <input type="text" class="form-control bg-body-secondary border-0" placeholder="Search for pr"
+            aria-label="Search">
+
+          <!-- أيقونة العدسة -->
+          <div class="bg-body-secondary rounded-end.">
+            <span class="input-group-text bg-black border-0 rounded-2 p-3 mt-1 mb-1">
+              <i class="fa-solid fa-magnifying-glass text-white "></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 d-flex  ">
+
+        <div class="dropdown mt-3 mx-3 me-1  ">
+          <button class="btn  dropdown-toggle fs-7" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Language
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><img src="english.png"> English</a></li>
+            <li><a class="dropdown-item" href="#"><img src="espanol.png"> Espanol</a></li>
+            <li><a class="dropdown-item" href="#"><img src="francais.png"> Francais</a></li>
+            <li><a class="dropdown-item" href="#"><img src="portugues.png"> portugues</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown mt-3  me-2">
+          <button class="btn  dropdown-toggle fs-7" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            USD
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"> EUR</a></li>
+            <li><a class="dropdown-item" href="#"> BRL</a></li>
+          </ul>
+        </div>
+
+        <div class="d-flex align-items-center mt-3 ">
+          <i class="fa-regular fa-user text-black "></i>
+          <a href="###" class="text-decoration-none text-black">Account</a>
+        </div>
+
+        <div class="position-relative mt-4 mx-3 ">
+          <i class="fa-regular fa-heart fs-4"></i>
+          <span class="position-absolute top-0 start-100 fs-7 translate-middle badge rounded-pill bg-danger">
+            0
+          </span>
+        </div>
+
+        <div class="position-relative mt-4">
+          <i class="fa-solid fa-cart-shopping fs-4"></i>
+          <span class="position-absolute top-0 start-100 fs-7 translate-middle badge rounded-pill bg-danger">
+            0
+          </span>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-1">
+
+  </header>
+
+  <nav class="d-flex align-items-center border-bottom px-4 py-2">
+    
+    <div class="d-flex align-items-center mx-5 mb-2">
+      <i class="fa-solid fa-bars me-2"></i>
+      <span class="fw-bold">SHOP BY CATEGORIES</span>
+    </div>
+
+   
+    <div class="vr mx-3"></div>
+
+    
+    <ul class="d-flex list-unstyled mb-2 gap-4">
+      <li><a href="#" class="nav-2  text-decoration-none me-2 ">Homepages <i class="fa-solid fa-angle-down"></i></a>
+      </li>
+      <li><a href="#" class=" nav-2  text-decoration-none me-2">Categories <i class="fa-solid fa-angle-down"></i></a>
+      </li>
+      <li><a href="#" class=" nav-2  text-decoration-none me-2">Products <i class="fa-solid fa-angle-down"></i></a></li>
+      <li><a href="#" class="nav-2  text-decoration-none me-2">Pages <i class="fa-solid fa-angle-down"></i></a></li>
+      <li><a href="#" class="nav-2  text-decoration-none me-2">About us</a></li>
+      <li><a href="#" class=" nav-2  text-decoration-none me-2">Blog</a></li>
+      <li><a href="#" class="nav-2  text-decoration-none me-2"><i class="fa-solid fa-ticket me-1"></i>Best Discount</a>
+      </li>
+    </ul>
+
+    
+    <div class="mb-2 ms-auto px-5">
+      <a href="#" class="text-dark text-decoration-none">Recently viewed <i class="fa-solid fa-angle-down"></i></a>
+    </div>
+  </nav>
+
+
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb mx-5 mt-3" style="font-size: 15px;">
+      <li class="breadcrumb-item "><a href="#" class="text-decoration-none text-black">Home</a></li>
+      <li class="breadcrumb-item "><a href="#" class="text-decoration-none text-black">shop</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Fashion</li>
+      <li class="breadcrumb-item "><a href="#" class="text-decoration-none text-black">Fashion</a></li>
+      <li class="breadcrumb-item"><a href="# " class="text-decoration-none text-black">women</a></li>
+      <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-black">shorts</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Barbie Baseball Hat Cap Berkshire Fashions New</li>
+
+    </ol>
+  </nav>
+
+ 
+  <div class="row px-3 mt-2 ">
+   
+    <div class="col-md-1 d-flex flex-column align-items-center mt-4 ">
+      <img src="icecap.jpg" class="img-thumbnail mb-2 border-black" style="width: 80px; height: 80px;" alt="thumb">
+      <img src="sun.jpg" class="img-thumbnail mb-2" style="width: 80px; height: 80px;" alt="thumb">
+      <img src="sun2.jpg" class="img-thumbnail mb-2" style="width: 80px; height: 80px;" alt="thumb">
+      <img src="bag.jpg" class="img-thumbnail mb-2" style="width: 80px; height: 80px;" alt="thumb">
+    </div>
+
+   
+    <div class="col-md-5 text-center">
+      <img src="icecap.jpg" class="img-fluid " style="max-width: 350px;" alt="Main Image">
+    </div>
+
+    
+    <div class="col-md-6 px-5">
+      <p class="text-muted mb-0">Zara</p>
+      <h2 class="product-title">Barbie Baseball Hat Cap Berkshire<br> Fashions New</h2>
+      <div class="d-flex align-items-center small-text">
+        <span class="text-warning text-black fs-5 ">☆☆☆☆☆</span>
+        <span class="ms-2 text-body-tertiary" style="font-size: 14px;">(0 Reviews)</span>
+        <a href="#" class="ms-2  text-muted text-body-tertiary" style="font-size: 14px;">Write a review</a>
+      </div>
+
+      <ul class="list-unstyled mt-3 mb-3 ">
+        <li><i class="fa-solid fa-check text-success "></i> Unique Design</li>
+        <li><i class="fa-solid fa-check text-success"></i> Premium Material</li>
+        <li><i class="fa-solid fa-check text-success"></i> Classic & Versatile</li>
+      </ul>
+
+      <p class="price  text-black fs-2 text-bold">$12</p>
+      <span class="in-stock bg-success pt-1 pb-1 px-2 ps-2 text-success bg-opacity-10 rounded-3">In stock</span>
+
+
+      <div class="d-flex align-items-center gap-3 mt-4">
+        <!-- Quantity -->
+        <div class="input-group bg-secondary-subtle rounded-2" style="max-width: 100px; height: 50px;">
+          <button class="btn">-</button>
+          <input type="text" class="form-control text-center bg-secondary-subtle" value="1">
+          <button class="btn">+</button>
+        </div>
+
+        
+        <div class="d-flex">
+          <button class="btn btn-dark fw-bold me-2 px-2 ps-2 pt-3 pb-3 text-white"
+            style="width: 225px; font-size:13px;">+ ADD TO CART</button>
+          <button class="btn fw-bold text-white" style="width: 120px; font-size:13px; background-color: red;">BUY
+            NOW</button>
+        </div>
+      </div>
+
+
+
+      <div class="mb-3 mt-4">
+        <a href="#" class="me-3 text-decoration-none text-body-tertiary">♡ Add to wishlist</a>
+        <a href="#" class="text-decoration-none text-body-tertiary">⇄ Add to compare</a>
+      </div>
+
+      <hr style="width: 400px; color: rgba(147, 146, 146, 0.805);">
+     
+      <p class="small-text mb-1 te">
+        <strong class="text-body-tertiary text-muted">SKU:</strong>
+        <span class="ms-2">KGVT48C82S</span>
+      </p>
+      <p class="small-text mb-1 te">
+        <strong class="text-body-tertiary text-muted">Categories:</strong>
+        <span class="ms-2">shorts,Skirs</span>
+      </p>
+
+      
+      <div class="icon-bar  ">
+        <i class="fa-brands fa-facebook-f px-2"></i>
+        <i class="fa-brands fa-pinterest-p px-2"></i>
+        <i class="fa-brands fa-x-twitter px-2"></i>
+        <i class="fa-brands fa-linkedin px-2"></i>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container my-4 mt-5 pt-5">
+    <div class="d-flex align-items-center justify-content-between pb-1 pt-2 rounded" style="background-color: #d7f3e1;">
+
+      
+      <div>
+        <h4 class="fw-bold px-5 pt-1">Earn Cash Back For The Things<br>You Buy Every Where</h4>
+        <p class="mb-0 px-5 text-black pt-3" style="font-size: 14px;">
+          Application via Merto.
+          <a href="#" class="text-decoration-underline text-black " style="font-size: 14px;">Terms & Conditions.</a>
+        </p>
+      </div>
+
+      
+      <div class="d-flex align-items-center  ">
+        <button class="btn custom-btn  fw-bold me-5 rounded-2 pt-3 pb-3 px-4 ps-4 mt-3 ">VIEW MORE</button>
+        <img src="payments card.png" class="fs-5 pe-5">
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+  <div class="container my-5">
+
+   
+    <ul class="nav nav-underline custom-tabs" id="myTab" role="tablist">
+
+      <li class="nav-item h3" role="presentation">
+        <button class="nav-link active text-body-tertiary fw-bold " id="desc-tab" data-bs-toggle="tab"
+          data-bs-target="#desc" type="button" role="tab">Description</button>
+      </li>
+
+      <li class="nav-item h3" role="presentation">
+        <button class="nav-link text-body-tertiary fw-bold" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs"
+          type="button" role="tab">Specifications</button>
+      </li>
+      <li class="nav-item h3" role="presentation">
+        <button class="nav-link text-body-tertiary fw-bold" id="reviews-tab" data-bs-toggle="tab"
+          data-bs-target="#reviews" type="button" role="tab">Reviews (0)</button>
+      </li>
+    </ul>
+
+   
+    <div class="tab-content pt-4" id="myTabContent">
+
+      
+      <div class="tab-pane fade show active" id="desc" role="tabpanel">
+        <div class="row">
+          <div class="col-md-8">
+            <p>Compellingly grow performance based mindshare through parallel <br>potentialities. Rapidiously underwhelm
+              top-line catalysts for change<br> before best-of-breed materials. Competently brand timely catalysts<br>
+              for change through sustainable systems. Completely expedite<br> ubiquitous bandwidth after integrated
+              action items. Progressively<br> transform leading-edge supply chains whereas flexible niche <br>markets.
+            </p>
+          </div>
+          <div class="col-md-4   ">
+            <table class="table table-bordered rounded-2 border-1 overflow-hidden  "
+              style="width: 730px; position: relative; right: 300px;">
+              <tbody class="">
+                <tr>
+                  <th class="bg-body-secondary p-3 " style="font-size: 14.5px;">Shipping</th>
+                  <td class="pe-4 bg-body-secondary">We currently offer free shipping worldwide on all orders over $100.
+                  </td>
+                </tr>
+                <tr>
+                  <th class="p-3" style="font-size: 14.5px;">Sizing</th>
+                  <td>Fits true to size. Do you need size adviced?</td>
+                </tr>
+                <tr>
+                  <th class="bg-body-secondary p-3 " style="font-size: 14.5px;">Return & exchange</th>
+                  <td class="bg-body-secondary">If you are not satisfied with your purchase you can return it to us
+                    within 14 days for an exchange or refund.</td>
+                </tr>
+                <tr>
+                  <th class="p-3" style="font-size: 14.5px;">Assistance</th>
+                  <td>Contact us on (+44) 555 88 65, or email us at support@themesky.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="tab-pane fade" id="specs" role="tabpanel">
+        <div class="container my-5 ">
+          <table class="table bg-body-secondary rounded-2 border overflow-hidden">
+            <tbody>
+              <tr>
+                <th class="bg-body-secondary p-3" style="font-size: 14px;">Fabric Type</th>
+                <td class="bg-body-secondary">50% Cotton, 48% Polyester, 2% Spandex</td>
+              </tr>
+              <tr>
+                <th class="p-3" style="font-size: 14px;">Care Instructions</th>
+                <td>Hand Wash Only</td>
+              </tr>
+              <tr>
+                <th class="bg-body-secondary p-3 " style="font-size: 14px;">Returns</th>
+                <td class="bg-body-secondary">FREE Returns</td>
+              </tr>
+              <tr>
+                <th class="p-3" style="font-size: 14px;">Season</th>
+                <td>Spring, summer and fall</td>
+              </tr>
+              <tr>
+                <th class="bg-body-secondary p-3" style="font-size: 14px;">Dimensions</th>
+                <td class="bg-body-secondary">0.5 x 0.5 x 0.5 inches</td>
+              </tr>
+              <tr>
+                <th class="p-3" style="font-size: 14px;">Item Weight</th>
+                <td>5.6 ounces</td>
+              </tr>
+              <tr>
+                <th class="bg-body-secondary p-3" style="font-size: 14px;">Material</th>
+                <td class="bg-body-secondary">Varsity jacket made of polyester fabric, super durable and soft enough,
+                  breathable, cozy, comfortable</td>
+              </tr>
+              <tr>
+                <th class="p-3" style="font-size: 14px;">Multi-occasion</th>
+                <td>Fashion unisex letterman jackets, perfect for men, women, teens or couples</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+        </div>
+      </div>
+
+      
+      <div class="tab-pane fade" id="reviews" role="tabpanel">
+        <div class="container my-5">
+         
+          <div class="row mb-4">
+            <div class="col-md-2 text-center">
+              <h1 class="fw-bold " style="font-size: 55px;">0.00</h1>
+              <small class="text-muted">Based on 0 reviews</small>
+            </div>
+            <div class="col-md-10">
+             
+              <div class="d-flex align-items-center  mb-1 ">
+                <div>5 ★</div>
+                <div class="rating-bar rounded-pill bg-body-secondary"></div>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <div>4 ★</div>
+                <div class="rating-bar rounded-pill bg-body-secondary"></div>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <div>3 ★</div>
+                <div class="rating-bar rounded-pill bg-body-secondary "></div>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <div>2 ★</div>
+                <div class="rating-bar rounded-pill bg-body-secondary"></div>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <div>1 ★</div>
+                <div class="rating-bar rounded-pill bg-body-secondary"></div>
+              </div>
+            </div>
+          </div>
+
+          <p class=" mb-5 text-black">There are no reviews yet.</p>
+
+         
+          <div class="pt-5 mt-4 mx-4 px-5 rounded-2 review-box">
+            <h5 class="fw-bold h3">Be the first to review “Barbie Baseball Hat Cap Berkshire Fashions New”</h5>
+            <p class="text-black pt-3">Your email address will not be published. Required fields are marked <span
+                class="text-danger">*</span></p>
+
+            <form>
+              
+              <div class="mb-3 d-flex">
+                <label class="form-label">Your rating <span class="text-danger">*</span></label>
+                <div class="star-rating mx-3">
+                  <i class="fa-regular fa-star " style="font-size: 17px;"></i>
+                  <i class="fa-regular fa-star" style="font-size: 17px;"></i>
+                  <i class="fa-regular fa-star" style="font-size: 17px;"></i>
+                  <i class="fa-regular fa-star" style="font-size: 17px;"></i>
+                  <i class="fa-regular fa-star" style="font-size: 17px;"></i>
+                </div>
+              </div>
+
+             
+              <div class="mb-3 d-flex " style="background-color: transparent;">
+                <label class="form-label " style="background-color: transparent;">Choose pictures (maxsize: 50kB, max
+                  files: 2)</label>
+                <input class="form-controlnames border-0 and shadow-none mx-2 fw-bold" style="font-size: 12px;"
+                  type="file" multiple>
+              </div>
+
+              
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label class="form-label">Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label">Email <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" required>
+                </div>
+              </div>
+
+              
+              <div class="mb-3">
+                <label class="form-label">Your review <span class="text-danger">*</span></label>
+                <textarea class="form-control" rows="5" required></textarea>
+              </div>
+
+             
+              <button type="submit" class="btn btn-dark px-5 fw-bold  ps-5 pt-2 pb-2 mb-5 bg-black"
+                style="font-size: 15px;">SUBMIT</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="container py-5">
+    <h3 class="mb-4 fw-bold">Related products</h3>
+
+    <div class="position-relative">
+     
+     
+
+     
+      <div class="d-flex overflow-auto gap-3 px-2" id="productScroll">
+
+       
+        <div class="product-card position-relative flex-shrink-0" style="width: 240px;">
+          <button class="wishlist-btn"><i class="bi bi-heart-fill"></i></button>
+          <div class="product-actions">
+            <button><i class="bi bi-arrow-left-right"></i></button>
+            <button><i class="bi bi-search"></i></button>
+            <button><i class="bi bi-cart"></i></button>
+          </div>
+          <img src="white jak.jpg" class="w-100" alt="Smart Glasses" />
+          <p class="mb-1">Smart Audio Glasses with Alexa in Classic Black</p>
+          <strong>$36</strong>
+        </div>
+
+        <!-- كارت 2 -->
+        <div class="product-card flex-shrink-0" style="width: 240px;">
+          <img src="blover.jpg" class="w-100" alt="Hoodie" />
+          <p class="mb-1">Unbothered Unisex Hoodie Sarcastic Pullover - White</p>
+          <strong>$59</strong>
+        </div>
+
+        <!-- كارت 3 -->
+        <div class="product-card flex-shrink-0" style="width: 240px;">
+          <img src="black t.jpg" class="w-100" alt="Sweater" />
+          <p class="mb-1">Oversize Unisex Cotton Chunky Sweater Brick</p>
+          <strong>$81</strong>
+        </div>
+
+        <!-- كارت 4 -->
+        <div class="product-card flex-shrink-0" style="width: 240px;">
+          <img src="or j.jpg" class="w-100" alt="T-Shirt" />
+          <p class="mb-1">New York Yankees MLB League Essential T-shirt</p>
+          <strong>$59 – $63</strong>
+        </div>
+
+        <!-- كارت 5 -->
+        <div class="product-card flex-shrink-0" style="width: 240px;">
+          <img src="choose.jpg" class="w-100" alt="Jacket" />
+          <p class="mb-1">Mens Winter Jacket Collar Warm Cotton, Coat Male...</p>
+          <strong>$115</strong>
+        </div>
+
+        <!-- كارت 6 -->
+        <div class="product-card flex-shrink-0" style="width: 240px;">
+          <img src="sun.jpg" class="w-100" alt="T-Shirt" />
+          <p class="mb-1">New York Yankees MLB League Essential T-shirt</p>
+          <strong>$59 – $63</strong>
+        </div>
+
+        <!-- كارت 7 -->
+        <div class="product-card flex-shrink-0" style="width: 240px;">
+          <img src="sun.jpg" class="w-100" alt="T-Shirt" />
+          <p class="mb-1">New York Yankees MLB League Essential T-shirt</p>
+          <strong>$59 – $63</strong>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="bg-dark  text-white pt-5  ">
+    <div class="container">
+      <div class="row gy-4">
+       
+        <div class="col-md-3 ">
+          <h3 class="fw-bold fs-1 ">M<span
+              class=" text-decoration-overline red border-top border-3 border-danger d-inline-block">e</span>rto</h3>
+          <p class="mb-1 mt-4 text-secondary"><i class="bi bi-geo-alt-fill me-2"></i>29 SE 2nd Ave, Miami, Florida</p>
+          <p class="mb-1 text-secondary"><i class="bi bi-envelope-fill me-2"></i>info@example.com</p>
+          <p class="fw-bold text-white fs-5 mt-2">(+92) 3942 7879</p>
+        </div>
+
+        
+        <div class="col-md-2">
+          <h6 class="fw-bold">SHOPPING</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none d-block py-1">Wishlist</a></li>
+            <li><a href="#" class="text-white text-decoration-none d-block py-1">Shop by Brand</a></li>
+            <li><a href="#" class="text-white text-decoration-none d-block py-1">Offers</a></li>
+            <li><a href="#" class="text-white text-decoration-none d-block py-1">Track order</a></li>
+            <li><a href="#" class="text-white text-decoration-none d-block py-1">Size Guide</a></li>
+          </ul>
+        </div>
+
+      
+        <div class="col-md-2">
+          <h6 class="fw-bold">INFORMATION</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none d-block py-1">Track Order</a></li>
+            <li><a href="#" class="text-white text-decoration-none d-block py-1">Shipping & Returns</a></li>
+            <li><a href="#" class="text-white text-decoration-none d-block py-1">About us</a></li>
+            <li><a href="#" class="text-white text-decoration-none d-block py-1">Help</a></li>
+            <li><a href="#" class="text-white text-decoration-none d-block py-1">Gift Cards</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <h6 class="fw-bold ">ACCOUNT</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none d-block py-1">Cart</a></li>
+            <li><a href="#" class="text-white text-decoration-none d-block py-1">My account</a></li>
+            <li><a href="#" class="text-white text-decoration-none d-block py-1">My orders</a></li>
+            <li><a href="#" class="text-white text-decoration-none d-block py-1">Wishlist</a></li>
+            <li><a href="#" class="text-white text-decoration-none d-block py-1">Affiliate Program</a></li>
+          </ul>
+        </div>
+
+        
+        <div class="col-md-3">
+          <h6 class="fw-bold pb-4 fs-5">Let’s keep in touch</h6>
+          <div class="email-box">
+            <input type="email" placeholder="enter your email address">
+            <button type="submit">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="d-flex gap-3 fs-5 mt-4">
+            <i class="fa-brands fa-facebook-f text-white"></i>
+            <i class="fa-brands fa-tiktok text-white"></i>
+            <i class="fa-brands fa-x-twitter text-white"></i>
+            <i class="fa-brands fa-youtube text-white"></i>
+            <i class="fa-brands fa-instagram text-white"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row text-center gy-3 border border-1 mt-5 mb-3 mx-3 px-5 ps-5 pt-3 pb-4">
+
+        
+        <div class="col-md-4 d-flex flex-column align-items-start justify-content-center text-white">
+          <div class="d-flex align-items-center mb-2">
+            <i class="fa-solid fa-phone fa-lg me-3 fs-2"></i>
+            <p class="fw-bold mb-0 text-start">Didn't find what you were looking for?</p>
+          </div>
+          <a href="#" class="text-white text-decoration-underline mx-5">Contact Us</a>
+        </div>
+
+        
+        <div class="col-md-4 d-flex flex-column align-items-center justify-content-center text-white">
+          <div class="d-flex align-items-center mb-2">
+            <i class="fa-regular fa-face-smile me-3 fs-2"></i>
+            <p class="fw-bold mb-0 ">How can we help you today?</p>
+          </div>
+          <a href="#" class="text-white text-decoration-underline me-5 pe-4  align-self-center">Help Center</a>
+        </div>
+
+       
+        <div class="col-md-4 d-flex flex-column align-items-center justify-content-center text-white">
+          <div class="d-flex align-items-center mb-2">
+            <i class="bi bi-life-preserver me-3 fs-2"></i>
+            <p class="fw-bold mb-0">We’d love to hear what you think!</p>
+          </div>
+          <a href="#" class="text-white text-decoration-underline me-5 pe-5  align-self-center">Give Feedback</a>
+        </div>
+
+      </div>
+
+
+      
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-2 mb-md-0 text-secondary mt-1 fs-7 mx-3">Copyright © Merto. All Rights Reserved</p>
+        <div class="d-flex gap-2 me-4 mt-3">
+          <img src="payment-icons-1 (1).png" alt="PayPal" height="30">
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
