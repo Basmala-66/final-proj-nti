@@ -1,0 +1,505 @@
+.Account {
+  position: relative;
+  top: 20px;
+}
+
+.overline-e {
+  text-decoration: overline;
+  text-decoration-color: red;
+}
+
+.nav-2 {
+  font-weight: 550;
+  color: #222020;
+  transition: color 0.4s;
+}
+
+.nav-2:hover {
+  color: red;
+}
+
+/* ألوان مخصصة غير متوفرة مباشرة في Bootstrap */
+.bg-custom-teal {
+  background-image: url(slide.png);
+}
+
+
+/* ارتفاعات مخصصة للألواح لأن Bootstrap لا يوفرها لكل القيم */
+.min-h-500px {
+  min-height: 500px;
+}
+
+.min-h-250px {
+  min-height: 250px;
+}
+
+
+.img-absolute-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+  z-index: 1;
+ 
+}
+
+/* تنسيق خاص لصورة الكرسي لوضعها في الزاوية */
+.chair-img-placement {
+  object-fit: contain;
+  /* للحفاظ على نسبة العرض إلى الارتفاع بدون قص */
+  object-position: bottom right;
+  /* لوضع الكرسي في الأسفل اليمين */
+  width: 60%;
+  /* للتحكم في حجم الكرسي */
+  height: 90%;
+  /* للتحكم في ارتفاع الكرسي */
+  right: 0;
+  bottom: 0;
+  left: auto;
+  /* لإلغاء خاصية left:0 من img-absolute-cover */
+}
+
+/* نقاط الترقيم (غير متوفرة في Bootstrap بشكل افتراضي) */
+.pagination-dot {
+  height: 10px;
+  width: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* لون رمادي فاتح */
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.pagination-dot.active {
+  background-color: white;
+  /* النقطة النشطة بيضاء */
+}
+
+/* تعديلات متجاوبة بسيطة (يمكن توسيعها حسب الحاجة) */
+@media (max-width: 767.98px) {
+
+  .min-h-500px,
+  .min-h-250px {
+    min-height: 350px;
+    /* تقليل الارتفاع على الشاشات الصغيرة */
+  }
+
+  .chair-img-placement {
+    width: 70%;
+    height: 70%;
+  }
+
+  /* تقليل حجم الخطوط على الشاشات الصغيرة */
+  .left-panel-text .display-3 {
+    font-size: 2.2rem !important;
+  }
+
+  .left-panel-text .display-4 {
+    font-size: 1.8rem !important;
+  }
+
+  .left-panel-text .fs-6 {
+    font-size: 0.9rem !important;
+  }
+}
+
+.img-absolute-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+
+.position-relative:hover .img-absolute-cover {
+  transform: scale(1.05); 
+}
+
+
+
+.position-relative:hover .btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+.category {
+  width: 120px;
+  margin: 0 8px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.category .circle1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f1f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(cosmetic-cat-7.jpg);
+  background-size: cover;
+}
+
+.category .circle2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f1f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(cha.jpg);
+  background-size: cover;
+}
+
+.category .circle3 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f1f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(computer.jpg);
+  background-size: cover;
+}
+
+.category .circle4 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f1f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(t-sh.jpg);
+  background-size: cover;
+}
+
+.category .circle5 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f1f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(cat-4.jpg);
+  background-size: cover;
+}
+
+.category .circle6 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f1f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(bag.jpg);
+  background-size: cover;
+}
+
+.category .circle7 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f1f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(cha.jpg);
+  background-size: cover;
+}
+
+.category .circle8 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f1f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(iphone.jpg);
+  background-size: cover;
+}
+
+
+.countdown span {
+  background: black;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 50%;
+  font-weight: bold;
+  margin: 0 2px;
+}
+
+
+.discount-badge {
+ position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #e00a0a;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  z-index: 10;
+}
+
+
+
+.old-price {
+
+  font-size: 10px;
+}
+
+
+
+
+.card-shop .card {
+  width: 18rem;
+  flex-shrink: 0;
+}
+
+
+
+
+.custom-card {
+      border-radius: 10px;
+      overflow: hidden;
+      height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding: 20px;
+      color: #fff;
+      position: relative;
+    }
+
+    .card-1 {
+      background-color: #5d6884;
+      background-image: url(car.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+    }
+
+    .card-2 {
+      background-image: url(sofa.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: #000;
+    }
+
+
+    .card-2:hover img{
+      transform: scale(1.05); 
+    }
+
+   
+
+    .card-3 {
+      background-color: #f8c6cb;
+      background-image: url(cream.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+    }
+
+    .beauty-text {
+      font-family: cursive;
+      font-size: 2rem;
+      opacity: 0.6;
+    }
+
+
+.product-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #f8411c;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  z-index: 10;
+}
+
+
+.col-md-4 {
+  height: 200px;
+}
+
+.x {
+  height: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+.x:hover {
+  height: 250px;
+  z-index: 999;
+
+}
+
+.hover-btn {
+  width: 105%;       
+  position: absolute;
+  left: 0;  
+  display: none;
+  padding: 10px;
+  bottom: 10px;
+}
+.custom-btn{
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.custom-btn:hover {
+  background-color: #000 !important; 
+  color: #fff !important;            
+}
+
+.card:hover .hover-btn {
+  display: block;
+}
+
+.icon-div{
+    margin-right: 10px;
+    height: 30px;
+}
+
+.icon-div i{
+    padding-bottom: 50px;
+   font-size: 10px;
+}
+
+
+
+.discount-badge {
+      background-color: rgb(213, 2, 2);
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 25px 15px;
+      border-radius: 50%;
+      position: absolute;
+      top: 190px;
+      left: 65%;
+      transform: translateX(-50%);
+      z-index: 10;
+    }
+
+   .carousel-thumbnails button {
+      border: none;
+      padding: 0;
+      
+     
+      margin-right: 10px;
+     
+    }
+
+    .carousel-thumbnails img {
+        height: 50px;
+        width: 50px;
+     
+      object-fit: cover;
+      border-radius: 5px;
+      border: 2px solid transparent;
+    
+    }
+
+    
+    .carousel-thumbnails button:hover img {
+      border-color: black;
+     
+    }
+
+
+
+@media (max-width: 767.98px) {
+  .d-flex.justify-content-between.align-items-center {
+    flex-direction: column;
+    
+    align-items: flex-start !important;
+   
+  }
+
+  .d-flex.align-items-center {
+    flex-wrap: wrap;
+    
+    justify-content: flex-start !important;
+    margin-top: 10px;
+  }
+
+  .btn-link,
+  .see-all-btn {
+    margin-bottom: 5px;
+   
+  }
+
+  .product-title {
+    min-height: auto;
+   
+  }
+}
+
+
+
+.readmore-btn:hover{
+  color: white;
+  background-color: black;
+}
+
+.search-a{
+color: black;
+}
+.hov-s:hover{
+  color: red;
+}
+
+
+/*footer*/
+.email-box {
+  border: 1px solid #555;
+  border-radius: 6px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  width: 350px;
+  background-color: transparent;
+}
+
+.email-box input {
+  border: none;
+  background: transparent;
+  color: #ccc;
+  flex: 1;
+  outline: none;
+  font-size: 16px;
+}
+
+.email-box button {
+  border: none;
+  background: transparent;
+  color: #ccc;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+
+
